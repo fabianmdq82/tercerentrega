@@ -1,0 +1,11 @@
+/*footer*/
+
+footer{
+    grid-area: footer;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: $fondo-footer;
+    div {
+        padding: 10px;
+    }
+}

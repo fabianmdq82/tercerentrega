@@ -1,0 +1,78 @@
+/*main*/
+
+@import 'mixins';
+
+main{
+    grid-area: main;
+    background-color:$fondo-main;
+    .texto-consulta{ 
+        padding: 20px;
+        p{
+            text-align: center;
+            font-family:'Roboto', sans-serif;
+            font-size: 35px;
+        }
+    }
+    form{
+        display: grid;
+        justify-content: center;
+        .formulario{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    img{
+        overflow: hidden;
+    }
+    div h1{
+        color: rgb(46, 98, 241);
+        text-align: center;
+        font-size: 8vw;
+        font-family: 'Bagel Fat One', cursiva; 
+    }
+    .productos{
+        display: flex;  
+        flex-direction: column;
+    }
+    .logorincon{
+        margin: 50px 150px;
+        padding: 20px;
+        .imagenlogo{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .card{
+        @include tarjeta (antiquewhite, 10px, 20px);
+        display: flex;
+        flex-direction: column;
+        div{ 
+            h3{
+            text-align: center;
+            padding: 5px;
+            }
+            p{
+            padding: 5px;
+            }
+        }
+        .foto {
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 15px 5px;
+        }
+        .boton {
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 15px 5px;
+        :hover{
+            transform: scale(2);
+        }
+        .boton-compra{
+            background-color: rgb(177, 82, 169);
+            padding: 5px;
+            color: bisque;
+        }
+        }
+    }
+}
+

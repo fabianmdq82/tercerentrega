@@ -1,0 +1,141 @@
+/*variables*/
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Amaranth:wght@700&family=Bagel+Fat+One&family=Hammersmith+One&family=Paytone+One&family=Poppins:ital@0;1&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*body*/
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "section" "footer";
+}
+
+/*header*/
+header {
+  grid-area: header;
+  background-color: rgb(236, 242, 255);
+  padding: 25px;
+}
+
+/*main*/
+main {
+  grid-area: main;
+  background-color: rgb(229, 209, 250);
+}
+main .texto-consulta {
+  padding: 20px;
+}
+main .texto-consulta p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+}
+main form {
+  display: grid;
+  justify-content: center;
+}
+main form .formulario {
+  display: flex;
+  justify-content: space-between;
+}
+main img {
+  overflow: hidden;
+}
+main div h1 {
+  color: rgb(46, 98, 241);
+  text-align: center;
+  font-size: 8vw;
+  font-family: "Bagel Fat One", cursiva;
+}
+main .productos {
+  display: flex;
+  flex-direction: column;
+}
+main .logorincon {
+  margin: 50px 150px;
+  padding: 20px;
+}
+main .logorincon .imagenlogo {
+  display: flex;
+  flex-direction: column;
+}
+main .card {
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+main .card div h3 {
+  text-align: center;
+  padding: 5px;
+}
+main .card div p {
+  padding: 5px;
+}
+main .card .foto {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 15px 5px;
+}
+main .card .boton {
+  display: flex;
+  justify-content: center;
+  padding: 5px 5px 15px 5px;
+}
+main .card .boton :hover {
+  transform: scale(2);
+}
+main .card .boton .boton-compra {
+  background-color: rgb(177, 82, 169);
+  padding: 5px;
+  color: bisque;
+}
+
+/*section*/
+.aclaracion {
+  grid-area: section;
+  padding: 30px 50px;
+  text-align: center;
+  font-size: 30px;
+  background-image: linear-gradient(to top, rgb(229, 209, 250), rgb(255, 244, 210), rgb(229, 209, 250));
+}
+
+/*footer*/
+footer {
+  grid-area: footer;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgb(255, 244, 210);
+}
+footer div {
+  padding: 10px;
+}
+
+/*media 480*/
+@media (min-width: 480px) {
+  main .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr 1fr 1fr;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*media 768*/
+@media (min-width: 768px) {
+  main .productos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

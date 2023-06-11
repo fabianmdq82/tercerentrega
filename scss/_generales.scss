@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amaranth:wght@700&family=Bagel+Fat+One&family=Hammersmith+One&family=Paytone+One&family=Poppins:ital@0;1&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap');
+
+
+/*body*/
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    "footer"
+    ;
+}
